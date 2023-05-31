@@ -107,7 +107,7 @@ def handle_client(client):
                 broadcast(f"{name} has left the chatroom".encode('utf-8'))
                 break
 
-        except error as e:
+        except Exception as e:
             print(e)
             break
 def broadcast(msg , prefix=""):
